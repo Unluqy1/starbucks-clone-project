@@ -2,10 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Fuggles&family=Gabarito&family=Heebo:wght@100;400;800&family=Karla:wght@300;400;500&family=Lato:wght@300;400;700&family=League+Spartan:wght@400;500;700&family=Manrope:wght@300;400;600;700&family=Mitr:wght@300;400;600&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Raleway:ital,wght@1,300&family=Roboto:wght@100;300;400&display=swap');
 
+@font-face {
+    font-family: SoDoSans;
+    font-weight: 400;
+    src: url(./assets/SoDoSans-Regular.woff);
+}
+@font-face {
+    font-family: SoDoSans;
+    font-weight: 300;
+    src: url(./assets/SoDoSans-Light.woff);
+}
+@font-face {
+    font-family: SoDoSans;
+    font-weight: 600;
+    src: url(./assets/SoDoSans-SemiBold.woff);
+}
+@font-face {
+    font-family: SoDoSans;
+    font-weight: 800;
+    src: url(./assets/SoDoSans-Bold.woff);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: SoDoSans;
 }
 
 a{
@@ -57,7 +79,7 @@ ul{
     
 }
 .landing_page__navbar--list2{
-    max-width: 22%;
+    max-width: 24%;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -77,15 +99,28 @@ ul{
 }
 .landing_page__navbar--item{
   
-    font-family: Karla, sans-serif;
-    font-size: 14   px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 800;
    
+}
+.lighter__text{
+    font-weight: 600;
+
+}
+.smaller__text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.fa-bars{
+  opacity: 0;
 }
 .landing_page__navbar--black-text{
      color: #403a3a;
 }
 #landing_page__navbar--sign-in{
-   margin-left: 10%;
+   margin: 0 28px;
     border: 1px solid #000;
     padding: 8px 12px;
     border-radius: 25px;
@@ -109,6 +144,8 @@ ul{
     align-items: center;
     position: sticky;
     top: 0;
+    box-shadow: 0px 1px 4px black;
+
  
 }
 .landing_page__sticky-header{
@@ -116,9 +153,9 @@ ul{
     width: 100%;
     margin: 0 auto;
     color: #fff;
-    font-size: 16px;
-    font-family: Mitr, sans-serif;
-    font-weight: 600;
+    font-size: 14px;
+    font-family: SoDoSans, sans-serif;
+    font-weight: 800;
     letter-spacing: 2px;
 
 }
@@ -127,7 +164,7 @@ height: 78vh;
 display: flex;
 align-items: center;
 background-image: url(./assets/xl-hero-desktop_2021.jpg);
-background-size: 150% 100% ;
+background-size: 140% 100% ;
 background-repeat: no-repeat;
 background-position: top center;
 background-color: 
@@ -145,25 +182,26 @@ background-color:
 
 }
 .landing_page__content--header{
-    font-family: Karla, sans-serif;
-    width: 55%;
+    font-family: SoDoSans, sans-serif;
+    width: 50%;
    color: #111112;  
-   font-size: 40px;
+   font-size: 36px;
    padding-bottom: 12px;
+   font-weight: 600;
 }
 .landing_page__content--para{
-    font-family: Roboto, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-size: 20px;
     color: #111112;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
 }
 .landing_page__content--button{
- margin-bottom: 12px;
- padding: 8px 12px;
+ margin-bottom: 16px;
+ padding: 8px 16px;
  border: none;
  border-radius: 25px;
- font-family: Karla,sans-serif;
- font-weight: 700;
+ font-family: SoDoSans,sans-serif;
+ font-weight: 600;
  color: #fff;
  background-color: 
  #008248;
@@ -176,6 +214,7 @@ background-color:
     text-decoration: underline;
     color: #111112;
 }
+
 
 /* GETTING STARTED */
 
@@ -197,16 +236,17 @@ background-color:
     align-items: center;
 }
 .getting_started__header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-size: 28px;
     color: #403a3a; 
     padding-bottom: 12px;
+    font-weight: 600;
 }
 .getting_started__subheader{
     color: #403a3a;
-    font-family: Karla, sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 18px;
+    font-family: SoDoSans, sans-serif;
+
+    font-size: 16px;
     padding-bottom: 48px;
 }
 .getting_started__steps{
@@ -235,7 +275,7 @@ background-color:
     border: 2px solid 
     #008248;
     font-size: 20px;
-    font-family: Roboto, sans-serif;
+    font-family: SoDoSans, sans-serif;
 }
 .getting_started__step--content{
    display: flex;
@@ -245,15 +285,16 @@ background-color:
 }
 .getting_started__step--content--header{
     
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 20px;
     padding-bottom: 16px;
+    font-weight: 600;
 }
 .getting_started__step--content--para{
 
     color: #403a3a;
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-weight: 500;
     text-align: center;
     width: 95%;
@@ -285,9 +326,10 @@ background-color:
     padding-bottom: 3em;
 }
 .favourites__content--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 28px;
+    font-weight: 600;
 }
 .favourites__content--ratings{
     display: flex;
@@ -298,7 +340,7 @@ background-color:
 
 }
 .favourites__content--rating{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: #403a3a;
@@ -346,14 +388,15 @@ background-color:
 }
 .favourites__drinks--content--header{
     color: #403a3a;
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-size: 24px;
+    font-weight: 600;
     letter-spacing: 0.5px;
     padding-bottom: 1em;
 }
 .favourites__drinks--content--para{
     color: #403a3a;
-    font-family: roboto, sans-serif;
+    font-family: SoDoSans, sans-serif;
     font-size: 16px;
  
 } 
@@ -376,13 +419,14 @@ margin: 0 auto;
     justify-content: center;
 }
 .extras__title{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 28px;
     padding-bottom: 24px;
+    font-weight: 600;
 }
 .extras__para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
    font-weight: 500;
     text-align: center;
@@ -410,13 +454,14 @@ justify-content: space-evenly;
     width: 100%;
 }
 .extras__item--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 20px;
     padding-bottom: 1em;
+    font-weight: 600;
 }
 .extras__item--para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 16px;
     font-weight: 500;
@@ -427,8 +472,8 @@ justify-content: space-evenly;
     color: 
     #008248;
     text-decoration: underline;
-    font-family: Karla, sans-serif;
-    font-size: 18px;
+    font-family: SoDoSans, sans-serif;
+    font-size: 16px;
 }
 
 /* STAR EARNING */
@@ -448,13 +493,14 @@ justify-content: space-evenly;
     justify-content: center;
 }
 .star_earning__header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 28px;
+    font-weight: 600;
     padding-bottom: 20px;
 }
 .star_earning__subheader{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     width: 65%;
     font-size: 16px;
@@ -492,7 +538,11 @@ justify-content: space-evenly;
     flex-direction: column;
   width: 30%;
   color: #403a3a;
-  font-family: Karla, sans-serif;
+  font-family: SoDoSans, sans-serif;
+  font-weight: 500; 
+}
+.star_earning__cash-amount--header{
+    font-weight: 600;
 }
 .star_earning__row1--item--content, .star_earning__row2--item--content{
     display: flex;
@@ -501,11 +551,12 @@ justify-content: space-evenly;
 .star_earning__row1--item--content, .star_earning__row2--item--content{
     display: flex;
     padding-left: 2em;
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
 }
 .star_earning--row2--item--header, .star_earning--row1--item--header{
     font-size: 20px;
     padding-bottom: 16px;
+    font-weight: 600;
 }
 .star_earning--row2--item--para, .star_earning--row1--item--para{
     width: 75%;
@@ -547,13 +598,14 @@ padding-left: 36px;
     justify-content: center;
 }
 .rewards_coming__content--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 28px;
     padding-bottom: 20px;
+    font-weight: 600;
 }
 .rewards_coming__content--para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 16px;
     padding-bottom: 2em;
@@ -582,7 +634,8 @@ padding-left: 36px;
     background-color: 
     #008248;
     color: #fff;
-    font-family: Mitr, sans-serif;
+    font-family: SoDoSans, sans-serif;
+    font-weight: 600;
     padding: 4px 12px;
    border-radius: 25px;
 } 
@@ -600,13 +653,14 @@ padding-left: 36px;
     width: 100%;
     margin: 0 auto;
 }.questions__container--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 28px;
     padding-bottom: 20px;
+    font-weight: 600;
 }
 .questions__container--para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 16px;
     padding-bottom: 20px;
@@ -646,7 +700,7 @@ padding-left: 36px;
     padding-bottom: 24px;
 }
 .terms_of_use__top-content--para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 14px;
 
@@ -666,16 +720,16 @@ padding-left: 36px;
     padding-bottom: 36px;
 }
 .terms_of_use__item--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
-    font-size: 15px;
+    font-size: 14px;
 
- font-weight: 600;
+ font-weight: 800;
  letter-spacing: 2px;
    padding-bottom: 20px;
 }
 .terms_of_use__item--para{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 14px;
 
@@ -721,7 +775,7 @@ padding-left: 36px;
   width: 15%;
 }
 .contact_links__item--header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 20px;
 
@@ -733,7 +787,7 @@ font-weight: 500;
     padding-bottom: 20px;
 }
 .contact_links__item--list--link{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 16px;
 }
@@ -787,7 +841,7 @@ justify-content: space-between;
 
 }
 .socials__header{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     flex: 1;
    padding-right: 20px;
    border-right: 1px solid #403a3a;
@@ -803,7 +857,8 @@ font-weight: 500;
     width: 100%;
 }
 .socials__copyright--message{
-    font-family: Karla, sans-serif;
+    font-family: SoDoSans, sans-serif;
     color: #403a3a;
     font-size: 14px;
+    font-weight: 400;
 }
