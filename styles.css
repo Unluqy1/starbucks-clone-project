@@ -128,7 +128,9 @@ align-items: center;
 background-image: url(./assets/xl-hero-desktop_2021.jpg);
 background-size: 150% 100% ;
 background-repeat: no-repeat;
-background-position: center;
+background-position: top center;
+background-color: 
+#f1f8f6;
 
 }
 .landing_page__content{
