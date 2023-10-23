@@ -39,10 +39,7 @@ ul{
 
 /* LANDING PAGE */
 
-#landing_page{
-    position: relative;
-    height: 100%;
-}
+
 
 .landing_page__navbar{
     max-width: 95%;
@@ -51,12 +48,12 @@ ul{
   
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 12px;
     align-items: center;
  
 }
 .landing_page__navbar--container{
-    max-width: 3%;
+    max-width: 4%;
    
 }
 .landing_page__navbar--logo{
@@ -160,7 +157,7 @@ ul{
 
 }
 .landing_page__remaining-space{
-height: 78vh;
+
 display: flex;
 align-items: center;
 background-image: url(./assets/xl-hero-desktop_2021.jpg);
@@ -169,10 +166,11 @@ background-repeat: no-repeat;
 background-position: top center;
 background-color: 
 #d4e9e2;
-
+padding: 16% 0;
+width: 100%;
 }
 .landing_page__content{
-    max-width: 30%;
+    max-width: 100%;
     width: 100%;
     display: flex;
     margin-right: 30%;
@@ -183,7 +181,7 @@ background-color:
 }
 .landing_page__content--header{
     font-family: SoDoSans, sans-serif;
-    width: 50%;
+    width: 25%;
    color: #111112;  
    font-size: 36px;
    padding-bottom: 12px;
@@ -250,9 +248,11 @@ background-color:
     padding-bottom: 48px;
 }
 .getting_started__steps{
-    display: flex;
-    align-items: center;
+    display: grid;
+    align-items: flex-start;
     justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
 
 }
 .getting_started__step--number{
@@ -264,8 +264,9 @@ background-color:
 
 }
 .getting_started__step{
-    flex: 1;
+    margin: 0 1em;
     padding: 0 12px;
+
 }
 .getting_started__step--number-head{
     color: 
@@ -290,6 +291,9 @@ background-color:
     font-size: 20px;
     padding-bottom: 16px;
     font-weight: 600;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
 }
 .getting_started__step--content--para{
 
@@ -297,7 +301,7 @@ background-color:
     font-family: SoDoSans, sans-serif;
     font-weight: 500;
     text-align: center;
-    width: 95%;
+    width: 85%;
 }
 .underline_text{
     text-decoration: underline;
@@ -438,6 +442,7 @@ max-width: 80%;
 width: 100%;
 margin: 0 auto;
 justify-content: space-evenly;
+align-items: flex-start;
 }
 .extras__item{
    display: flex;
@@ -861,4 +866,109 @@ font-weight: 500;
     color: #403a3a;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1420px){
+    .landing_page__navbar--list2{
+        max-width: 40%;
+        justify-content: space-evenly;
+    }
+   
+    .marker_icon{
+        width: 3%;
+        
+    }
+    .landing_page__navbar--list1{
+        max-width: 50%;
+        width: 100%;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+    .landing_page__navbar--list1 .landing_page__navbar--item{
+        padding: 10px;
+    }
+    .landing_page__remaining-space{
+        background-size: 160% 120%;
+    }
+    .landing_page__content--header{
+    max-width: 45%;
+    width: 100%;
+ }
+ .favourites__content--ratings{
+    width: 80%;
+ }
+ .favourites__drinks--content{
+    width: 80%;
+ }
+ .favourites__drinks--content--para{
+    width: 80%;
+ }
+ .favourites__drinks--row{
+    padding: 2% 0;
+ }
+ .favourites__drinks--picture--container{
+    width: 60%;
+ }
+}
+
+@media (max-width: 992px){
+    .landing_page__navbar--container{
+        max-width: 6%;
+    }
+    .landing_page__navbar{
+        padding: 12px;
+    }
+    .landing_page__navbar--list1{
+        max-width: 40%;
+        margin-left: 20px;
+    }
+    .landing_page__navbar--list2{
+        max-width: 55%;
+    }
+
+    .smaller__text{
+        padding-left: 10px;
+    }
+    .marker_icon{
+     width: 4%;
+    }
+    .landing_page__content--header{
+        max-width: 45%;
+        width: 100%;
+     }
+     .landing_page__content{
+        width: 100%;
+     }
+     .landing_page__remaining-space{
+        background-size: 170% 120%;
+        background-position-x: -17em;
+    }
+    .favourites__content--ratings{
+        width: 90%;
+    }
+    .favourites__drinks--content{
+        width: 90%;
+     }
+     .favourites__drinks--content--para{
+        width: 90%;
+     }
+     .favourites__drinks--row{
+        padding: 5% 0;
+     }
+     #getting_started .row{
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+     }
+     .extras__title--content{
+        max-width: 60%;
+     }
+     .extras__item--pic--container{
+        width: 50%;
+     }
+}
+@media (max-width: 768px){
+    
 }
