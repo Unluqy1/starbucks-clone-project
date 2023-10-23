@@ -19,7 +19,7 @@ ul{
 
 #landing_page{
     position: relative;
-    height: 100vh;
+    height: 95vh;
 }
 
 .landing_page__navbar{
@@ -122,12 +122,13 @@ ul{
 
 }
 .landing_page__remaining-space{
-height: 84vh;
+height: 78vh;
 display: flex;
 align-items: center;
-background-image: url(./assets/pexels-engin-akyurt-1437318.jpg);
-background-size: 100%;
+background-image: url(./assets/xl-hero-desktop_2021.jpg);
+background-size: 150% 100% ;
 background-repeat: no-repeat;
+background-position: center;
 
 }
 .landing_page__content{
